@@ -5,8 +5,23 @@ Use a for loop to iterate over the numbers list.
 Inside the loop, add the current number (use the loop variable) to the total variable.
 After the loop, print the final total value, which represents the sum of all the numbers in the list."""
 
+#my try
+total = 0
+for number in [1, 5, 3, 9]:
+    total += number 
+    print(total)
 
-numbers = [0,1,2,3,4,5,6,7,8,9]
-for number in numbers :
-    print (f"{number + number}")
+#chatgpt love
 
+# Define the list of numbers
+numbers = [1, 5, 3, 9]
+
+# Initialize total to 0
+total = 0
+
+# Use a for loop to iterate over the numbers list and calculate the sum
+for number in numbers:
+    total += number
+
+# Print the final total value
+print(total)
