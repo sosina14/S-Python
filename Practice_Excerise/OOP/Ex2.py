@@ -10,15 +10,17 @@ class product:
         self.name = name 
         self.price = price 
         self.quantity = quantity
+    
 
-product1 = product ("T-shirt" , 8000, "20 peace")
-product2 = product ("Hat" , 200 , "100 peace")
-product3 = product ("Phone ", 3000, "10 peace")
+product1 = product ("T-shirt" , 8000, 20 )
+product2 = product ("Hat" , 200 , 100 )
+product3 = product ("Phone ", 3000, 10 )
 
 # calculating the total value of products in stock.
-total_value = product1.price + product2.price + product3.price
-print(f"Total value of the all products is ${total_value}. ")
 
+total_value = (product1.price * product1.quantity) + (product2.price*product2.quantity) + (product3.price * product3.quantity)
+
+print(f"Total value of ({product1.name}, {product2.name} and {product3.name}) is ${total_value}. ")
 
 
 
